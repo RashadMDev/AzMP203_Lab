@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ilə Todo List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Yeni tapşırıq əlavə edin...">
+            <button id="addBtn">Əlavə et</button>
+        </div>
+
+        <div class="task-filters">
+            <button class="filter-btn active" data-filter="all">Hamısı</button>
+            <button class="filter-btn" data-filter="active">Aktiv</button>
+            <button class="filter-btn" data-filter="completed">Tamamlanan</button>
+        </div>
+
+        <ul id="taskList">
+        </ul>
+
+        <div id="noTasks" class="no-tasks">Heç bir tapşırıq yoxdur</div>
+    </div>
+</body>
+
+</html>
